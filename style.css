@@ -1,0 +1,28 @@
+
+/*LAYOUT*/
+
+body {
+  text-align: center;
+}
+
+.entry {
+  background-color: gray;
+  border: solid;
+  text-align: left;
+  padding: 25px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
