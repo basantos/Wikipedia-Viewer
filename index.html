@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Wikipedia Viewer</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Condensed:300,400" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="">
-      <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Get Random Wikipedia Article</a>
-      <p>OR</p>
-      <form>
-        <input id="search" type="search" name="search">
-      </form>
-      <input id="submit" type="submit">
+    <div class="main">
+      <h1>I want to learn about...</h1>
+      <input id="search" type="search" name="search">
+      <a class="random" href="https://en.wikipedia.org/wiki/Special:Random"
+      target="_blank">...on second thought, please give me something random to learn.</a>
     </div>
     <div class="display">
 
     </div>
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
     <script src="script.js" type="text/javascript"></script>
   </body>
 </html>

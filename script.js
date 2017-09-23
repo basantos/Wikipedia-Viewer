@@ -15,7 +15,7 @@ function retrieveWikis(){
       summary = data.query.search[i].snippet;
       linkHeader = title.replace(/[" "]/g,"_");
       link = "https://en.m.wikipedia.org/wiki/" + linkHeader;
-      html += "<br><a href=" + link + " target='_blank'><section class='entry'><h1>" + title + "</h1><br>" + summary + "</section></a>"
+      html += "<br><a href=" + link + " target='_blank'><section class='entry'><h2>" + title + "</h2><br>" + summary + "</section></a>"
     }
     $(".display").html(html);
     //$(".display").html(JSON.stringify(data.query.search[1].title));
@@ -23,14 +23,11 @@ function retrieveWikis(){
 }
 
 $(document).ready(function(){
-  $("#submit").click(function(){
-    retrieveWikis();
-  });
   $("#search").keypress(function(e){
     if (e.keyCode == 13){
       event.preventDefault();
       if (document.getElementById("search").value === ""){
-        $(".display").html("Please enter search term.");
+        $(".display").html("<br>Please enter search term.");
       }
       else {
         retrieveWikis();
