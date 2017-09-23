@@ -7,6 +7,9 @@ function retrieveWikis(){
     var summary = "";
     var link = "";
     var linkHeader = "";
+    if (data.query.searchinfo.totalhits === 0){
+      html += "No wikis found."
+    }
     for (var i = 0; i < data.query.search.length; i++){
       title = data.query.search[i].title;
       summary = data.query.search[i].snippet;
@@ -26,7 +29,12 @@ $(document).ready(function(){
   $("#search").keypress(function(e){
     if (e.keyCode == 13){
       event.preventDefault();
-      retrieveWikis();
+      if (document.getElementById("search").value === ""){
+        $(".display").html("Please enter search term.");
+      }
+      else {
+        retrieveWikis();
+      }
     }
   })
 })
