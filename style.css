@@ -29,6 +29,33 @@ body {
   padding-left: 15px;
 }
 
+@media screen and (max-width: 450px){
+  #search {
+    min-width: 291px;
+    border: thin black solid;
+    margin-left: 52px;
+  }
+}
+
+@media screen and (max-width: 380px){
+  #search {
+    min-width: 337px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  #search {
+    margin-left: 4px;
+  }
+}
+
+@media screen and (max-width: 325px){
+  #search {
+    min-width: 297px;
+  }
+}
+
 .random {
   font-size: 12px;
 }
